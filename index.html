@@ -11,7 +11,7 @@
 	  <div>
 		  <h1>Scheduled maintenance</h1>
 		  <p>The IEA website is down due to scheduled maintenance. We expect the site to be back online by the morning of Saturday, 4 December (Paris time). Apologies for any inconvenience.</p>
-		  <p>::CLOUDFLARE_ERROR_500S_BOX::</p>
+		  <p class="cf-error">::CLOUDFLARE_ERROR_500S_BOX::</p>
 	  </div>
 	</div>
 	<style>
@@ -44,6 +44,12 @@
 		src: url(https://www.iea.org/assets/front/fonts/Graphik-Semibold.woff2) format("woff2"),url(https://www.iea.org/assets/front/fonts/Graphik-Semibold.woff) format("woff");
 		font-display: swap
 	}
+    h1 {
+        font-size: 4.125rem;
+        line-height: 4.25rem;
+        font-weight: 700;
+        letter-spacing: -.03em;
+    }
 	body, html {
 		height: 100%;
 		width: 100%;
@@ -69,6 +75,10 @@
 	.container div, .container img {
 		flex: 0 1 auto;
 	}
+    .cf-error {
+        background: #e6e6e6;
+        border-radius: 6px;
+    }
 	</style>
 </body>
 </html>
